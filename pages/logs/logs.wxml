@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+<view>
+  <view wx:for="{{arrObj}}" wx:key="index">{{item.index}}:{{item.name}}</view>
+  <button bindtap='changeAll'>改变所有</button>
+  <button bindtap='changeOne'>改变第一个</button>
+</view>
